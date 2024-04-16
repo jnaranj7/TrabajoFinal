@@ -1,0 +1,75 @@
+*{
+    margin: 3;
+    padding: 1;
+    box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.psico4{
+   text-align: center;
+}
+
+body{
+    background-color: #B9E0FF;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+
+}
+
+.slider-box{
+width: 600px;
+height: auto;
+margin: 50px auto;
+overflow: hidden;
+}
+
+p{
+    font-size: 120%;
+}
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+
+.slider-box img{
+    width: 100%;
+
+}
+
+@keyframes slide{
+    0%{ margin-left: 0;}
+    20%{ margin-left: 0;}
+
+    25%{ margin-left: -100%;}
+    45%{ margin-left: -100%;}
+
+    50%{ margin-left: -200%;}
+    70%{ margin-left: -200%;}
+
+
+}
+
+@media(max-width:991px) {
+    body {
+        padding: 30px;
+    }
+
+    .slider-box {
+        width: 100%;
+    }
+
+}

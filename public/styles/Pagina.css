@@ -1,0 +1,21 @@
+*{
+    margin: 3;
+    padding: 1;
+    box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{
+    font-size: 120%;
+}
+
+body{
+    background-color: #B9E0FF;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+
+}
