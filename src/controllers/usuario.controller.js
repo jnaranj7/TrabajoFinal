@@ -1,4 +1,4 @@
-import usuarioModel from "../models/user.model.js"
+import usuarioModel from "../models/usuario.model.js";
 
 /*
     GET -> me muestra los usuarios
@@ -9,14 +9,25 @@ import usuarioModel from "../models/user.model.js"
 
 //prueba inicial
 export const getUsuario = async (req, res) => {
-    return res.send('Funciona la petición GET')
+    try{
+        let usuarios = await usuarioModel.find();
+        return res.send(usuarios)
+    }catch{
+        return res.json({error: "error al mostrar los datos" + error})
+    }
 }
 export const postUsuario = async (req, res) => {
-    return res.send('Funciona la petición POST')
+   try{
+      let datosUsuario = req.body;
+      let nuevoUsuario = await usuarioModel.create(datosUsuario)
+      return res.json(nuevoUsuario)
+   }catch(error){
+     return res.json({error: "error al crear los datos" message: error.message})
+   }
 }
 export const putUsuario = async (req, res) => {
-    return res.send('Funciona la petición PUT')
+    return res.send('Funciona la petición PUT');
 }
 export const deleteUsuario = async (req, res) => {
-    return res.send('Funciona la petición DELETE')
+    return res.send('Funciona la petición DELETE');
 }

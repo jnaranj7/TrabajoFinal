@@ -4,7 +4,7 @@ const schema = mongoose.Schema;
 
 // Estructuramos cómo van a ser los datos a guardar en nuestra db
 const usuarioSchema = new schema({
-    nombreCompleto: {
+    nombreUsuario: {
         type: String,
         required: true
     },
@@ -16,7 +16,7 @@ const usuarioSchema = new schema({
         type: String,
         required: true
     }
-})
+});
 
 // Exportamos el modelo
 // mongoose.model():se utiliza para definir o recuperar un modelo de datos en Mongoose. 

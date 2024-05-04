@@ -1,5 +1,5 @@
 import express from 'express';
-import { getUsuario, postUsuario, putUsuario, deleteUsuario } from '../controllers/user.controller.js';
+import { getUsuario, postUsuario, putUsuario, deleteUsuario } from '../controllers/usuario.controller.js';
 
 // definimos la variable para nuestras rutas
 const usuarioRouter = express.Router();
